@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Expense Calculater APP</title>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <div class="heading">Expense Calculater APP</div>
+
+      <div class="balanceMainDiv">
+        <div class="balanceDiv">
+          <div class="balanceTitle">
+            Balance
+            <div class="BWIcon"><i class="fa-solid fa-wallet"></i></div>
+          </div>
+          <div class="balanceFigures">
+              <div class="BDIcon"><span>Rs</span></div>
+              <span id="balanceNumber"> </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mainInExDiv">
+        <div class="incomeDiv">
+          <div class="incomeTitle">
+            Income
+            <div class="incomeAddIcon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="incomeFigures">
+            <div class="incomeDollarIcon">
+                <span>Rs</span>
+            </div>
+            <span id="incomeNumber"> </span>
+          </div>
+        </div>
+
+        <div class="expenseDiv">
+          <div class="expenseTitle">
+            Expense
+            <div class="expenseSubIcon"><i class="fa-solid fa-minus"></i></div>
+          </div>
+          <div class="expenseFigures">
+            <div class="expenseDollarIcon">
+                <span>Rs</span>
+            </div>
+            <span id="expenseNumber"> 0 </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="userInputMainDiv">
+        <div class="userInputDiv">
+          <input
+            type="number"
+            placeholder="0.00"
+            class="inputField"
+            id="inputField"
+          />
+        </div>
+      </div>
+
+      <div class="buttonsMainDiv">
+        <div class="btnDiv">
+          <div class="incomeBtnDiv">
+            <button class="incomeBtn" onclick=" calculator('incomeBtn')">
+              <i class="fa-sharp fa-solid fa-coins" class="btnIcon"></i>Income
+            </button>
+          </div>
+          <div class="expenseBtnDiv">
+            <button class="expenseBtn" onclick="calculator('expenseBtn')">
+              <i class="fa-solid fa-money-bill-transfer"></i>Expense
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>

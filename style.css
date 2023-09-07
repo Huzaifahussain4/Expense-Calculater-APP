@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(40deg, rgba(0, 0, 0, 1) 0%, rgba(106, 110, 115, 1) 100%);
+    box-sizing: border-box;
+}
+
+.mainDiv {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* background: rgb(0, 0, 0); */
+    box-sizing: border-box;
+
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.balanceMainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balanceDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.balanceTitle{ 
+    color: white;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BWIcon{
+    opacity: 50%;
+    font-size: 50px;
+}
+
+.balanceFigures{
+    color: white;
+    font-size: 65px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    /* text-transform: uppercase; */
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+}
+
+.BDIcon{
+    font-size: 30px;
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+.mainInExDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.incomeDiv{
+    width: 50%;
+    height: 15vh;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.expenseDiv{
+    width: 50%;
+    height: 15vh;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.incomeTitle{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.incomeAddIcon{
+    color: rgb(1, 175, 85);
+}
+
+.incomeFigures{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    /* text-transform: uppercase; */
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+}
+
+.incomeDollarIcon{
+    font-size: 30px;
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+.expenseTitle{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+}
+
+.expenseSubIcon{
+    color: red;
+}
+
+.expenseFigures{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    /* text-transform: uppercase; */
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+}
+
+.expenseDollarIcon{
+    font-size: 30px;
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+.userInputMainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.userInputDiv{
+    width: 100%;
+    margin: 10px;
+}
+
+.inputField{
+    height: 8vh;
+    width: 97%;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding-left: 10px;
+    color: white;
+    outline: none;
+   
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.buttonsMainDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 10px; */
+}
+
+.btnDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.incomeBtnDiv{
+    width: 45%;
+}
+
+.expenseBtnDiv{
+    width: 45%;
+}
+
+.incomeBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.expenseBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.incomeBtn>i{
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.expenseBtn>i{
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.incomeBtn:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(75, 75, 75);
+    box-shadow: 0 0 10px 5px rgb(75, 75, 75);
+}
+
+.expenseBtn:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(75, 75, 75);
+    box-shadow: 0 0 10px 5px rgb(75, 75, 75);
+}
